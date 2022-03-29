@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import * as classes from './Library.module.css'
+import classes from './Library.module.css'
 import addBtn from './../../assets/img/add.svg'
 import deleteBtn from './../../assets/img/delete.svg'
 
@@ -49,7 +49,7 @@ const Library = (props) => {
                 ))}
 
                 <div className={classes.settings}>
-                    <button onClick={() => deleteWord(index)}>
+                    <button onClick={() => { alert('Sanya, what is index? "lang-dev/src/components/Library/Library.jsx", string 52') /* deleteWord(index) */ }}>
                         <img src={deleteBtn} alt="" />
                     </button>
                 </div>

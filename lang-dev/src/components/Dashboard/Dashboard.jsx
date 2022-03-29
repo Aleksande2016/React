@@ -1,5 +1,5 @@
 import React from 'react'
-import * as classes from './Dashboard.module.css'
+import classes from './Dashboard.module.css'
 import PlayButton from './../../assets/img/play.svg'
 
 const Dashboard = () => {
