@@ -1,13 +1,15 @@
 import React from 'react';
 import {ReactComponent as Logo} from '../../assets/img/Icon.svg'
-import * as styles from './Header.module.css'
+import styles from './Header.module.css' // * as
 import Nav from '../Nav/Nav';
 
 const Header = () => {
-    <header className={styles.header}>
-        <Logo />
-        <Nav />
-    </header>
+    return (
+        <header className={styles.header}>
+            <Logo />
+            <Nav />
+        </header>
+    )
 }
 
 export default Header

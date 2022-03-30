@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import * as classes from './Library.module.css'
+import classes from './Library.module.css' // * as
 import addBtn from './../../assets/img/add.svg'
 import deleteBtn from './../../assets/img/delete.svg'
 
@@ -45,14 +45,14 @@ const Library = (props) => {
                         <li>{word.word}</li>
                         <li>{word.translate}</li>
                         <li>{word.learn}</li>
+                    
+                        <div className={classes.settings}>
+                            <button onClick={() => deleteWord(index)}>
+                             <img src={deleteBtn} alt="" />
+                            </button>
+                        </div>
                     </ul>
                 ))}
-
-                <div className={classes.settings}>
-                    <button onClick={() => deleteWord(index)}>
-                        <img src={deleteBtn} alt="" />
-                    </button>
-                </div>
            </div>
         </section>
     )

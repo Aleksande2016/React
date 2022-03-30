@@ -54,9 +54,9 @@ section {
     opacity: .6;
     cursor: pointer;
 }
-.addWordBlock img.close {
+/* .addWordBlock img.close {
 
-}
+} */
 
 .wordsTable > ul:not(:first-child) > li{
     z-index: 1;
