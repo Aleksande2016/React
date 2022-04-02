@@ -2,7 +2,8 @@ import React from 'react'
 import classes from './Dashboard.module.css'  // * as
 import PlayButton from './../../assets/img/play.svg'
 
-const Dashboard = () => {
+const Dashboard = ({points}) => {
+    console.log(0.2 * Math.sqrt(points))
     return (
         <section className={classes.dashboardContainer}>
             <div className={classes.gameBlock}>
@@ -14,11 +15,11 @@ const Dashboard = () => {
             </div>
             <div className={classes.pointsBlock}>
                 <span>Common experience</span>
-                <h3>238 points</h3>
+                <h3>{points} points</h3>
             </div>
             <div className={classes.levelBlock}>
                 <span>level</span>
-                <h3>7 level</h3>
+                <h3>{(0.2 * Math.sqrt(points)).toFixed()} level</h3>
                 <p>Learn 750 new words in one course</p>
             </div>
             <div className={classes.levelBackground}></div>
